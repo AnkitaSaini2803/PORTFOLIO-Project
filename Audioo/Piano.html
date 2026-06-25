@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Piano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+
+    <div class="relative flex">
+
+        <!-- White Keys -->
+        <button id="C" class="w-20 h-72 bg-white border border-gray-300 rounded-b-lg active:bg-gray-200">C</button>
+        <button id="D" class="w-20 h-72 bg-white border border-gray-300 rounded-b-lg active:bg-gray-200">D</button>
+        <button id="E" class="w-20 h-72 bg-white border border-gray-300 rounded-b-lg active:bg-gray-200">E</button>
+        <button id="F" class="w-20 h-72 bg-white border border-gray-300 rounded-b-lg active:bg-gray-200">F</button>
+        <button id="G" class="w-20 h-72 bg-white border border-gray-300 rounded-b-lg active:bg-gray-200">G</button>
+        <button id="A" class="w-20 h-72 bg-white border border-gray-300 rounded-b-lg active:bg-gray-200">A</button>
+        <button id="B" class="w-20 h-72 bg-white border border-gray-300 rounded-b-lg active:bg-gray-200">B</button>
+
+        <!-- Black Keys -->
+        <div class="absolute top-0 left-14 flex">
+            <button id="C#" class="w-12 h-44 bg-black rounded-b-lg absolute left-0 active:bg-gray-700"></button>
+
+            <button id="D#" class="w-12 h-44 bg-black rounded-b-lg absolute left-20 active:bg-gray-700"></button>
+
+            <!-- Gap after E -->
+
+            <button id="F#" class="w-12 h-44 bg-black rounded-b-lg absolute left-60 active:bg-gray-700"></button>
+
+            <button id="G#" class="w-12 h-44 bg-black rounded-b-lg absolute left-80 active:bg-gray-700"></button>
+
+            <button id="A#" class="w-12 h-44 bg-black rounded-b-lg absolute left-[100px] active:bg-gray-700"></button>
+        </div>
+
+    </div>
+    <script>
+    
+        let a1=new Audio()
+        document.addEventListener("keydown",(e)=>{
+            console.log('Pressed',e.key)
+            // `Created An Audio object only once instead of creating an audio 
+            // object each time and changed the source of audio 
+            if(e.key==='a'){
+                // let a1=new Audio(`./Audioo/A${count}.mp3`)
+                // const a1=new Audio('./Audioo/A0.mp3');
+                a1.src='./Audioo/A0.mp3'
+                a1.play().then(()=>{
+                    console.log('Played')
+                });
+            }
+
+            if(e.key==='b'){
+                a1.src='./Audioo/A1.mp3'
+                a1.play().then(()=>{
+                    console.log('Played')
+                });
+            }
+            
+            if(e.key==='c'){
+                a1.src='./Audioo/A3.mp3'
+                a1.play().then(()=>{
+                    console.log('Played')
+                });
+            }
+
+            if(e.key==='d'){
+                a1.src='./Audioo/A4.mp3'
+                a1.play().then(()=>{
+                    console.log('Played')
+                });
+            }
+
+            if(e.key==='f'){
+                a1.src='./Audioo/A5.mp3'
+                a1.play().then(()=>{
+                    console.log('Played')
+                });
+            }
+
+            if(e.key==='g'){
+                a1.src='./Audioo/A6.mp3'
+                a1.play().then(()=>{
+                    console.log('Played')
+                });
+            }
+            
+
+
+        })
+
+    </script>
+</body>
+</html>
