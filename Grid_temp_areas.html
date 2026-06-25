@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            /* background-color: brown; */
+            height:50vh;
+            width: 40vw;
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-columns:repeat(4,1fr);
+            grid-template-areas:
+              "a1 a2 a3 a4"
+              "b1 m m b4"
+              "c1 m m c4"
+              "d1 d2 d3 d4";
+
+            gap:5px;
+        }
+        /* .a1{grid-area: a1;background-color: aqua;}
+        .a2{grid-area: a2;background-color: black;}
+        .a3{grid-area: a3;background-color: blueviolet;}
+        .a4{grid-area: a4; background-color: burlywood;}
+        .b1{grid-area: b1;background-color: cadetblue;}
+        .b4{grid-area: b4;background-color: chartreuse;}
+        .c1{grid-area: c1;background-color: chocolate;}
+        .c4{grid-area: c4;background-color: cornflowerblue;}
+        .d1{grid-area: d1;background-color: crimson;}
+        .d2{grid-area: d2;background-color: cyan;}
+        .d3{grid-area: d3;background-color: darkblue;}
+        .d4{grid-area: d4;background-color: deepskyblue;} */
+        .m{grid-area: m;background-color: deeppink;}
+
+    .container div{
+        border: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="b1"></div>
+        <div class="b4"></div>
+        <div class="c1"></div>
+        <div class="c4"></div>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+        <div class="m"></div>
+    </div>
+ 
+</body>
+</html>

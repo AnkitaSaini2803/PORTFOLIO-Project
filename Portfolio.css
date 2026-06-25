@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navigation */
+
+header{
+    background:#222;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:auto;
+}
+
+.logo{
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    color:#00bcd4;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(
+    to right,
+    #00bcd4,
+    #2196f3
+    );
+    color:white;
+}
+
+.hero span{
+    color:yellow;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:#2196f3;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.hero button:hover{
+    background:black;
+    color:white;
+}
+
+/* Sections */
+
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+/* Skills */
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    padding:20px;
+    width:180px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    border-radius:10px;
+}
+
+/* Projects */
+
+.project-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.project-card{
+    width:300px;
+    padding:20px;
+    background:white;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    border-radius:10px;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    transition:0.4s;
+}
+
+/* Contact Form */
+
+form{
+    width:60%;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+form button{
+    background:#2196f3;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        margin-top:10px;
+    }
+
+    .project-card{
+        width:100%;
+    }
+
+    form{
+        width:100%;
+    }
+}

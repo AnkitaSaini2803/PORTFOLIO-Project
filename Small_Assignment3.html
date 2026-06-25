@@ -1,0 +1,36 @@
+<!-- 16-06-2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <button id="btn">Add To-do list</button>
+    <script>
+        const button=document.getElementById('btn')
+        button.addEventListener('click',()=>{
+            let varr=document.createElement('div');
+
+            let h=document.createElement('h1');
+            h.textContent='Create A To-Do list'
+
+            let removebtn=document.createElement('button')
+            removebtn.id='btnn'
+            removebtn.textContent='Remove'
+
+            varr.appendChild(h)
+            varr.appendChild(removebtn)
+
+            document.body.appendChild(varr)
+
+            removebtn.addEventListener('click',()=>{
+                document.body.removeChild(varr)
+            })
+
+        })
+        
+    </script>
+</body>
+</html>

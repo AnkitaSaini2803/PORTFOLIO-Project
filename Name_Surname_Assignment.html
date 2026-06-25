@@ -1,0 +1,33 @@
+<!-- Small Assignment-02          12-06-2026 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ankita</h1>
+    <h1>Ankita</h1>
+    <h1>Ankita</h1>
+    <h1>Ankita</h1>
+    <h1>Ankita</h1>
+    <h1>Ankita</h1>
+
+    <button id="btn">Click Me To Add Surname</button>
+    <script>
+        const button = document.getElementById('btn');
+        button.addEventListener('click', () => {
+            const ele = document.getElementsByTagName('h1');
+            console.log(ele)
+
+            for (let i = 0; i < ele.length; i++) {
+                ele[i].textContent += ' Saini ';
+            }
+        })
+    </script>
+</body>
+
+</html>

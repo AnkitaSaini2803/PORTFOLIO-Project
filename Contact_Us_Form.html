@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e5f0e8;
+    padding:20px;
+    }
+
+    .form-container{
+    background:#ffffff;
+    width:100%;
+    max-width:550px;
+    padding:35px;
+    /* border-radius:12px; */
+    }
+    h1{
+    margin-bottom:20px;
+    color:black;
+    }
+    .query-box{
+        margin-top:15px;
+    }
+    .query{
+         width:220px;
+        padding:10px;
+       display:inline-block;
+       border:1px solid black;
+        /* height:45px;
+        width: 100px;
+        display: inline-block;
+        padding: 20px;
+        border:1px solid black; */
+    }
+    input[type="email"]{
+    width:100%;
+    padding:10px;
+} 
+    input[type="text"]{
+    width:100%;
+    padding:10px;
+}
+    textarea{
+    width:100%;
+    height:100px;
+    padding:10px;
+    border:1px solid black;}
+
+    .form-container{
+        background:white;
+        width:550px;
+        padding:30px;
+     }
+
+    .first,
+    .last{
+       width:48%;
+       display:inline-block;
+    }
+    button{
+    width:100%;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+    margin-top:15px;
+} 
+   label{
+    display:block;
+    margin-bottom:5px;
+    margin-top:10px;
+}
+.checkbox-box{
+    margin-top:15px;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="form-container">
+      <h1>Contact Us Form</h1>
+      <form>
+        <div class="Name Box">
+            <div class="first">
+             <label>First Name</label>
+             <input type="text">
+             </div>
+
+            <div class="last">
+            <label>Last Name</label>
+            <input type="text">
+            </div>
+        </div>
+         
+        <br>
+        <label>Email Address</label>
+        <input type="email">
+         
+        <br>
+        <div class="query-box">
+            <label>Query Type</label>
+         <div class="query">
+            <input type="radio" name="query">
+            General Enquiry
+        </div>
+        <div class="query">
+            <input type="radio" name="query">
+            Support Request
+        </div>
+
+        </div>
+         
+        <br>
+        <br>
+
+        <div class="message-box">
+            <label>Message</label>
+            <textarea></textarea>
+        </div>
+
+        <div class="checkbox-box">
+            <input type="checkbox">
+            I consent to being contacted by the team *
+        </div>
+
+        <button type="submit">
+            Submit
+        </button>
+
+      </form>
+
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties Demo</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f2f2f2;
+            padding:200px;
+        }
+
+        h1{
+            text-align:center;
+        }
+
+        .box{
+            width:80%;
+            height:300px;
+            margin:40px auto;
+            border:10px solid black;
+            padding:30px;
+            color:white;
+            font-size:25px;
+            /* font-weight:bold; */
+        }
+
+        /* 1. background-color */
+        .bg-color{
+            background-color:teal;
+        }
+
+        /* 2. background-image */
+        .bg-image{
+            background-image:url("https://picsum.photos/800/400");
+        }
+
+        /* 3. background-repeat */
+        .bg-repeat{
+            background-image:url("https://picsum.photos/100");
+            /* background-repeat:repeat-y; */
+            background-repeat:repeat-x;
+            /* background-repeat:repeat; */
+        }
+
+        /* 4. background-position */
+        .bg-position{
+            background-image:url("https://picsum.photos/300");
+            background-repeat:no-repeat;
+            background-position:top right;
+            /* background-position:bottom right; */
+            background-color:gray;
+        }
+
+        /* 5. background-size */
+        .bg-size{
+            background-image:url("https://picsum.photos/900/500");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+        }
+
+        /* 6. background-attachment */
+        .bg-attachment{
+            background-image:url("https://picsum.photos/1000/600");
+            background-size:cover;
+
+            background-attachment:fixed;
+            background-repeat:no-repeat;
+        }
+
+        /* 7. background-origin */
+        .bg-origin{
+            background-image:url("https://picsum.photos/400");
+            background-repeat:no-repeat;
+            background-origin:content-box;
+            background-color:purple;
+        }
+
+        /* 8. background-clip */
+        .bg-clip{
+            background-color:orange;
+            background-clip:content-box;
+            color:black;
+        }
+
+        /* 9. background-blend-mode */
+        .bg-blend{
+            background-image:url("https://picsum.photos/800/500");
+            background-color:rgba(0,0,0,0.6);
+            background-blend-mode:darken;
+            /* background-size:cover; */
+            background-size:contain;
+        }
+
+        /* 10. background shorthand */
+        .bg-shorthand{
+            background:
+            url("https://picsum.photos/900/600")
+            no-repeat
+            center
+            fixed;
+
+            background-size:cover;
+        }
+
+        /* Gradient Example */
+        .gradient{
+            background-image:
+            linear-gradient(to right, red, blue);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>CSS Background Properties Demo</h1>
+
+    <!-- background-color -->
+    <div class="box bg-color">
+        background-color
+    </div>
+
+    <!-- background-image -->
+    <div class="box bg-image">
+        background-image
+    </div>
+
+    <!-- background-repeat -->
+    <div class="box bg-repeat">
+        background-repeat : repeat-x
+    </div>
+
+    <!-- background-position -->
+    <div class="box bg-position">
+        background-position : top right
+    </div>
+
+    <!-- background-size -->
+    <div class="box bg-size">
+        background-size : cover
+    </div>
+
+    <!-- background-attachment -->
+    <div class="box bg-attachment">
+        background-attachment : fixed
+    </div>
+
+    <!-- background-origin -->
+    <div class="box bg-origin">
+        background-origin : content-box
+    </div>
+
+    <!-- background-clip -->
+    <div class="box bg-clip">
+        background-clip : content-box
+    </div>
+
+    <!-- background-blend-mode -->
+    <div class="box bg-blend">
+        background-blend-mode : darken
+    </div>
+
+    <!-- background shorthand -->
+    <div class="box bg-shorthand">
+        background shorthand property
+    </div>
+
+    <!-- gradient -->
+    <div class="box gradient">
+        linear-gradient background
+    </div>
+
+</body>
+</html>

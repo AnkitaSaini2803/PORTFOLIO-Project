@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        
+
+        body{
+            height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            display:flex;
+
+            width:70vw;
+            height:70vh;
+
+            gap:20px;
+        }
+
+        /* LEFT SECTION */
+
+        .left{
+            flex:3;
+
+            display:flex;
+            flex-direction:column;
+
+            gap:20px;
+        }
+
+        /* RIGHT SECTION */
+
+        .right{
+            flex:1;
+            border:2px solid black;
+        }
+
+        /* TOP + BOTTOM ROWS */
+
+        .top,
+        .bottom{
+            flex:1;
+
+            display:flex;
+            gap:20px;
+        }
+
+        /* BOXES */
+
+        .box{
+            flex:1;
+            border:2px solid black;
+        }
+
+        .box1{
+            flex:2;
+            border:2px solid black;
+        }
+
+        .box2{
+            flex:2;
+            border:2px solid black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+
+            <!-- TOP ROW -->
+            <div class="top">
+
+                <div class="box1"></div>
+                <div class="box"></div>
+
+            </div>
+
+            <!-- BOTTOM ROW -->
+            <div class="bottom">
+<!-- box hi vaapis is liye liya kyonki dono box same hi hai height,width,shape mein
+ toh alag se ek or box container lene ki jarurat nahi padi -->
+                <div class="box"></div>  
+                <div class="box2"></div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right"></div>
+
+    </div>
+
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height:90vh;
+            width:60vw;
+            display: flex;
+            align-items: flex-start;
+        }
+        .container{
+            display: flex;
+            width: 40vw;
+            height: 40vh;
+            gap: 20px;
+        }
+        .left{
+           flex:3;
+           display:flex;
+          flex-direction:column;
+          gap:20px;
+        }
+        .right{
+            flex:1;
+            display:flex;
+        }
+        .top{
+           flex:1;
+
+            display:flex;
+            gap:20px;
+        }
+
+        .box{
+           border:2px solid black;
+           flex:1;
+        }
+        .box1{
+            border:2px solid black;
+            flex:2;
+        }
+        .box2{
+            flex:1;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top">
+                <div class="box"></div>
+left bottom  -->
+            <!-- <div class="bottom">
+                <div class="box2"></div>
+            </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="right">
+            <div class="top">
+                <div class="box1"></div>
+            </div>
+        </div>
+
+        <div class="left">
+            <div class="bottom">
+                <div class="box2"></div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </div>
+</body> -->
+<!-- </html> -->
